@@ -1,0 +1,204 @@
+---
+layout: default
+title: Home
+---
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148321121-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148321121-1');
+</script>
+<link rel="canonical" href="https://murpheylab.github.io/">
+
+<meta name="keywords" content="fitzsimons lab, robotics, fitzsimons, machine learning, human machine, human robot, human robot interaction, active learning, optimal control, shared control, autonomy, robotic, robot, northwestern,emergent,cyber physical,information theory,ergodic,ergodicity,haptic,nonlinear systems">
+  <style>
+  * {box-sizing: border-box;}
+  .mySlides {display: none; }
+  img {vertical-align: middle;}
+  </style>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="button prev" onclick="plusSlides(-1)" style="margin-top:8em">&#10094;</div>
+<div class="button next" onclick="plusSlides(1)" style="margin-top:8em">&#10095;</div>
+
+
+<div class="mySlides fade"> <!--  -->
+  <img src="/images/rss-group2.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">Members of the lab at the Robotics Science and Systems (RSS) Conference in Freiburg, Germany. June 2019.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="/images/Alex_Birthday.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">Members of the lab celebrating a birthday! June 2019.</div>
+</div>
+
+<div class="mySlides fade"> <!--  -->
+	<img alt="Katie Fitzsimons demonstrating human-robot interaction at the Museum of Science and Industry" title="Robot Demonstration at MSI" src="/images/MSI_katie.jpg" style="width:56%; ; display:flex; justify-content:center;">
+	<div class="text">Katie showing a robot to children at the Museum of Science and Industry. April 2019.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="/images/MSI_rab.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">Rab demonstrating her experiment at the Museum of Science and Industry. April 2019.</div>
+</div>
+
+<div class="mySlides fade"> <!--  -->
+  <img src="/images/MSI_group.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">National Robotics Week at the Museum of Science and Industry. April 2019.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="/images/MSI_ola.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">Ola showing off the Nao robot at the Museum of Science and Industry. April 2019.</div>
+</div>
+
+<div class="mySlides fade"> <!--  -->
+  <img src="/images/WAFR_group.jpg" style="width:90%; display:flex; justify-content:center;">
+  <div class="text">Members of the lab at the Workshop on Algorithmic Robotics (WAFR) Conference in Merida, Mexico. December 2018.</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<!-- For slideshow to scroll through -->
+<script>
+  var slideIndex = 1;
+  var myTimer;
+
+  window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  })
+
+  function currentSlide(n){
+    clearInterval(myTimer);
+    myTimer = setInterval(function(){plusSlides(n+1)}, 4000);
+    showSlides(slideIndex = n);
+  }
+
+  function plusSlides(n) {
+    clearInterval(myTimer);
+    if (n < 0){
+      showSlides(slideIndex -= 1);
+    } else {
+      showSlides(slideIndex += 1);
+    }
+    if (n == -1){
+      myTimer = setInterval(function(){plusSlides(n+2)}, 4000);
+    } else {
+      myTimer = setInterval(function(){plusSlides(n+1)}, 4000);
+    }
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
+
+<div class="about-box">
+  <h2>About</h2>
+  <p>Robotics and haptics have the potential to enhance human performance and learning as 
+	  well as provide unique insight into neuromotor function through sensing and 
+	  quantification of human motion. At the same time, human behavior can inform the 
+	  development of control strategies for complex tasks and human-robot interactions. 
+	  Therefore, the Human-Centered Robotics Lab studies problems at the intersection of 
+	  biology, robotics, and control, with applications to physical human-robot interaction,
+	  haptics, interface design, and robotic learning from demonstration</p>
+</div>
+
+<br>
+<div class="row">
+  <div class="column4">
+      <div class="news-box">
+        <h2><a href="/news" style="color:black">News</a></h2>
+        <p><b>April 24, 2021</b> <a href="/2021/04/24/giorgostro.html" style="color:black">Giorgos's work on derivative-based Koopman operators gets accepted to IEEE T-RO</a></p>
+        <p><b>March 26, 2021</b> <a href="/2021/03/26/icrawithuiuc.html" style="color:black">Paper on Autotuning MPC</a> and <a href="/2021/03/26/olaahalyakatiepublishaticra.html" style="color:black"> ergodic imitation</a> both get accepted to ICRA 2021</p>
+        <p><b>February 22, 2021</b> <a href="/2021/02/22/rabdefense.html" style="color:black">Rab defends her PhD thesis</a></p>
+        <p><b>January 01, 2021</b> <a href="/2021/01/01/murpheylabinsciencepaper.html" style="color:black">Tommy and Alex part of <i>Low rattling: A predictive principle for self-organization in active collectives</i> paper in Science</a></p>
+        <p><b>November 20, 2020</b> <a href="/2020/11/20/toddresponsibleAIpanel.html" style="color:black">Todd participates in panel on responsibility in AI</a></p>
+        <p><b>November 11, 2020</b> <a href="/2020/11/11/katiedefendsthesis.html" style="color:black">Katie defends PhD thesis and starts job at Penn State</a></p>
+        <p><b>October 01, 2020</b> <a href="/2020/10/01/muchenjoinslab.html" style="color:black">Muchen Sun joins the Murphey Lab</a></p>
+        <p><b>September 25, 2020</b> <a href="/2020/09/25/NeurIPS.html" style="color:black">Giorgos publishes paper in NeurIPS 2020</a></p>
+        <p><b>September 22, 2020</b> <a href="/2020/09/22/elife-paper.html" style="color:black">Paper on animal exploration with Chen Chen and Malcolm MacIver comes out in eLife</a></p>
+        <!--         <p><b>September 4, 2020</b> <a href="/2020/09/04/tommy-masters-thesis-and-phd-prospectus.html" style="color:black">Tommy defends Masters thesis and completes PhD Prospectus</a></p>
+        <p><b>September 2, 2020</b> <a href="/2020/09/02/milli-phd-prospectus.html" style="color:black">Milli completes PhD Prospectus</a></p>
+        <p><b>August 24, 2020</b> <a href="/2020/08/24/ahalyadefense.html" style="color:black">Ahalya defends PhD thesis</a></p>
+        <p><b>July 31, 2020</b> <a href="/2020/07/31/ijrrarticles.html" style="color:black">IJRR articles come out</a></p>
+        <p><b>July 29, 2020</b> <a href="/2020/07/29/iandefense.html" style="color:black">Ian defends PhD thesis</a></p>
+        <p><b>April 30, 2020</b> <a href="/2020/04/30/ola-wins-ppc.html" style="color:black">Ola Wins Proposal Pitch Competition</a></p>
+        <p><b>April 24, 2020</b> <a href="/2020/04/24/joelwinsndseg.html" style="color:black">Joel Awarded NDSEG Fellowship</a></p>
+        <p><b>April 01, 2020</b> <a href="/2020/04/01/darpasprint5.html" style="color:black">Lab gets DARPA OFFSET Sprint 5 award</a></p>
+<p><b>March 30, 2020</b> <a href="/2020/03/30/katwinsnsfgrf.html" style="color:black">Katarina Awarded NSF Graduate Research Fellowship</a></p>
+        <p><b>March 25, 2020</b> <a href="/2020/03/25/ian-best-paper.html" style="color:black">Ian Wins 2019 T-RO Best Paper Award</a></p>
+        <p><b>November 7, 2019</b> <a href="/2019/11/07/new-lab-member.html" style="color:black">New Lab Member</a></p>
+        <p><b>November 7, 2019</b> <a href="/2019/11/07/taosha-best-paper.html" style="color:black">Taosha Wins Best Paper at IROS 2019</a></p>
+        <p><b>September 18, 2019</b> <a href="/2019/09/18/smarticle.html" style="color:black">"A robot made of robots..." published in Science Robotics</a></p>
+        <p><b>August 22, 2019</b> <a href="/2019/08/22/muri-kickoff.html" style="color:black">MURI Meeting on Algorithmic Matter and Emergent Behavior</a></p>
+        <p><b>June 22, 2019</b> <a href="/2019/06/22/giorgos-rss.html" style="color:black">Giorgos presents at RSS</a></p>
+        <p><b>May 20, 2019</b> <a href="/2019/05/20/darpa.html" style="color:black">DARPA award recieved</a></p>
+        <p><b>April 17, 2019</b> <a href="/2019/04/17/scirob.html" style="color:black">"Ergodicity reveals assistance and learning..." published in Science Robotics</a></p> -->
+          <!-- <p><b>April 12, 2019</b> <a href="/2019/04/12/muriawarded.html" style="color:black">MURI award</a></p> -->
+          <!-- <p><b>April 10, 2019</b> <a href="/2019/04/10/afsab.html" style="color:black">Todd Murphey appointed to Air Force Scientific Advisory Board</a></p> -->
+          <!-- <p><b>January 9, 2019</b> <a href="/2019/01/09/ola-masters-thesis-and-phd-prospectus.html" style="color:black">Ola's Masters Thesis Defense and PhD Prospectus</a></p>
+          <p><b>December 9, 2018</b> <a href="/2018/12/09/ian-taosha-ana-wafr.html" style="color:black">Ian, Taosha, and Ana present at WAFR</a></p>
+          <p><b>September 27, 2018</b> <a href="/2018/09/27/new-lab-members.html" style="color:black">New Lab Members</a></p> -->
+      </div>
+  </div>
+  <div class="column5">
+    <div class="recentpapers-box">
+      <h2><a href="/publications" style="color:black">Recent Papers</a></h2>
+      <p><b>Derivative-Based Koopman Operators for Real-Time Control of Robotic Systems</b>
+            <br>G. Mamakoukas, M. Castano, X. Tan, T. D. Murphey
+            <br><i>IEEE Transactions on Robotics (TRO)</i>, 2021. <a href="https://arxiv.org/abs/2010.05778">Article</a></p>
+      <p><b>Automatic Tuning for Data-driven Model Predictive Control</b>
+            <br>W. Edwards, G. Tang, G. Mamakoukas, T. D. Murphey, K. Hauser
+            <br><i>IEEE Int. Conf. on Robotics and Automation (ICRA)</i>, 2021. <a href="https://motion.cs.illinois.edu/papers/ICRA2021_Edwards_AutoMPC.pdf">Article</a></p>
+      <p><b>Ergodic imitation: Learning from what to do and what not to do</b>
+            <br>A. Kalinowska, A. Prabhakar, K. Fitzsimons, T. D. Murphey
+            <br><i>IEEE Int. Conf. on Robotics and Automation (ICRA)</i>, 2021. <a href="/pdfs/2021ICRAKaPrFiMu.pdf">PDF</a></p>
+      <p><b>Low Rattling: A Predictive Principle for Self-Organization in Active Collectives </b>
+            <br>P. Chvykov, T. A. Berrueta, A. Vardhan, W. Savoie, A. Samland, T. D. Murphey, K. Wiesenfeld, D. I. Goldman, and J. L. England
+            <br><i>Science</i>, vol. 371, no. 6524, 2021. <a href="https://science.sciencemag.org/content/371/6524/90">Article</a></p>
+      <p><b>Algorithmic Design for Embodied Intelligence in Synthetic Cells</b>
+            <br>A. Pervan and T. D. Murphey
+            <br><i>IEEE Transactions on Automation Science and Engineering (T-ASE)</i>, 2020. <a href="/pdfs/2020TASEPeMu.pdf">PDF</a></p>
+      <!-- <p><b>Ergodic Specifications for Flexible Swarm Control: From User Commands to Persistent Adaptation</b>
+          	<br>A. Prabhakar, I. Abraham, A. Taylor, M. Schlafly, K. Popovic, G. Diniz, B. Teich, B. Simidchieva, S. Clark, T. D. Murphey
+          	<br><i>Robotics Science and Systems</i>, 2020. <a href="/pdfs/2020RSSPrAbTaScPoMu.pdf">PDF</a> <a href="https://sites.google.com/view/ergodic-flexible-swarm-control">Video</a></p>
+      <p><b>Tuning movement for sensing in an uncertain world</b>
+      			<br>C. Chen, T. D Murphey, M. A MacIver
+      			<br><i>eLife</i>, e52371, 2020. <a href="https://elifesciences.org/articles/52371">Article</a></p> -->
+  </div>
+
+</div>
+
+</body>

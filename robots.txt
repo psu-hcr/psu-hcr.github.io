@@ -1,0 +1,5 @@
+Sitemap: https://psu-hcr.github.io/sitemap.xml
+
+User-agent: *
+Disallow: /pdfs/fitz_cv.pdf
+

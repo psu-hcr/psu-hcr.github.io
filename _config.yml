@@ -1,6 +1,11 @@
 theme: jekyll-theme-slate
-title:  Human-Centered Robotics Lab
+title:  Human-Centered Robotics Lab at Penn State University
+tagline: Human-Centered Robotics Lab at Penn State University, PI Katie Fitzsimons
 description: The Human-Centered Robotics lab is part of the Penn State University Mechanical Engineering Department. Our research focuses on computational methods in human-machine interaction,robot learning from demonstration, and haptics.
+canonical_url: https://psu-hcr.github.io
 markdown: kramdown
 
 # baseurl: /psu-hcr.github.io
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap

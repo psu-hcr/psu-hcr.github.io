@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-{% seo %}
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMQC11S5WE"></script>
 <script>
@@ -17,6 +17,8 @@
 
   gtag('config', 'G-KMQC11S5WE');
 </script>
+{% seo %}  
+<meta name="keywords" content="fitzsimons lab, robotics, fitzsimons, machine learning, human machine, human robot, human robot interaction, active learning, optimal control, shared control, autonomy, robotic, robot, northwestern,emergent,cyber physical,information theory,ergodic,ergodicity,haptic,nonlinear systems">
   </head>
 
   <body>
@@ -35,7 +37,7 @@
                     <li><a style="color:white; font-size:120%;" href="/news">News</a></li>
                     <li><a class="fun-colors" style="font-size: 120%;" href="/art">Art + Media</a></li> 
                     <li><a class="fa fa-github" style="color:white; font-size:120%;" href="https://github.com/psu-hcr"></a></li>
-                 </div>
+                 <!--</div>-->
                 </ul>
               </nav>
         </header>
@@ -52,7 +54,7 @@
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <ul>
-            <li style="font-weight:normal;color:white">Part of the <a style="color:white" href="https://www.me.psu.edu/">Mechanical Engineering Department</a> at <a style="color:white" href="https://www.psu.edu/">Pennsylvania State University</a> | <a style="color:white" href="/sitemap.html">Site Map</a> </li>
+            <li style="font-weight:normal;color:white">Part of the <a style="color:white" href="https://www.me.psu.edu/">Mechanical Engineering Department</a> at <a style="color:white" href="https://www.psu.edu/">Pennsylvania State University</a> | <a style="color:white" href="/sitemap.xml">Site Map</a> </li>
         </ul>
         <!-- {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>

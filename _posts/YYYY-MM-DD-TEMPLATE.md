@@ -2,6 +2,7 @@
 layout: post
 title: TITLE
 date: YYYY-MM-DD
+sitemap: false 
 ---
 <div class="container">
   <img class="hover_box" style="width:50%" src="IMAGE_PATH" alt="ALT_TEXT" >
@@ -9,3 +10,4 @@ date: YYYY-MM-DD
 </div>
 
 TEXT FOR NEWS POST
+remove the sitemap: false tag if you want it to be crawled by google

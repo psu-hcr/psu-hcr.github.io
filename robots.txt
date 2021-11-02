@@ -2,4 +2,6 @@ Sitemap: https://psu-hcr.github.io/sitemap.xml
 
 User-agent: *
 Disallow: /pdfs/fitz_cv.pdf
+Disallow: /people/template
+Disallow: /googleaeaa5529a0d8c0c6
 

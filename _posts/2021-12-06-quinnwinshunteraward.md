@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quinn wins Thomas Briggs Hunter Memorial Award
-date: YYYY-MM-DD
+date: 2021-12-06
 sitemap: false 
 ---
 
